@@ -53,6 +53,22 @@ Where `$PROJECT` is the name of your project.
 
 All Django code is inside `$PROJECT.dj`, so that you place non-Django code in `$PROJECT.*`.
 
+## Non-objectives
+
+Django training wheels does not intend to be a complete full solution, because I think a complete project can be overwhelming to Django newcomers.
+As developers become more acquainted with Django, they can evolve their projects with more functionality, or adopt more complete solutions such as [Cookiecutter Django](https://cookiecutter-django.readthedocs.io/en/latest/) (which support some features below).
+
+The following features are explicitly not in scope:
+
+* Any kind of HTML/CSS/JS
+* Testing and other static analysis
+* Production deployments
+* Custom authentication
+* Custom user models
+
+Django training wheels is designed to simplify adding these features to projects, but to not pay the complexity overhead until they are necessary.
+For example, Django training wheels uses [django-environ](https://github.com/joke2k/django-environ) for configuration, so deployments can use the `$DATABASE_URL` variable in production to connect to the database.
+
 ## Usage
 
 ```

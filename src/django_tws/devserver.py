@@ -14,6 +14,11 @@ def run(module):
     env = {
         "DATABASE_URL": db_url
     }
-    subprocess.run([sys.executable, "-m", f"{module}.manage", "migrate"], check=True, env=env)
-    subprocess.run([sys.executable, "-m", f"{module}.manage", "loaddevserverdata"], check=True, env=env)
-    subprocess.run([sys.executable, "-m", f"{module}.manage", "runserver"], check=True, env=env)
+    subprocess.run([sys.executable, "-m", f"{module}.manage", "removedevservermigrations"], check=True, env=env)
+    subprocess.run([sys.executable, "-m", f"{module}.manage", "makemigrations", "-n", "devserver_migration"], check=True, env=env)
+    try:
+       subprocess.run([sys.executable, "-m", f"{module}.manage", "migrate"], check=True, env=env)
+       subprocess.run([sys.executable, "-m", f"{module}.manage", "loaddevserverdata"], check=True, env=env)
+       subprocess.run([sys.executable, "-m", f"{module}.manage", "runserver"], check=True, env=env)
+    finally:
+        subprocess.run([sys.executable, "-m", f"{module}.manage", "removedevservermigrations"], check=True, env=env)

@@ -11,7 +11,10 @@ def run(module):
     db = tempdir / "tws.sqlite3"
     db_url = f"sqlite:///{db}"
     print("db_url", db_url)
-    env = {"DATABASE_URL": db_url}
+    env = {
+        "DATABASE_URL": db_url,
+        "DEVSERVER": "1",
+    }
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--command", default="runserver")

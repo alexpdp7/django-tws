@@ -25,6 +25,30 @@ The showcase project will include:
 * A model admin that uses `raw_id_fields` to replace a dropdown to select a value from a related table with a search functionality.
 * A model admin that filters the database rows depending on the logged-in user.
 
+### Provide an opinionated project structure
+
+Although Django provides the `startproject` and `startapp` commands, they only guide you slighty towards a simple project structure.
+
+Django newcomers can be confused by projects and apps.
+
+Django training wheels supports the following structure:
+
+* `$PROJECT/dj`
+  * `settings.py`
+  * `urls.py`
+  * `manage.py`
+  * `asgi.py`/`wsgi.py`
+  * `$APP_1`
+  * ...
+  * `$APP_n`
+* `devserver.py`
+* `pyproject.toml`
+
+Where `$PROJECT` is the name of your project.
+`$APP_i` are the apps ("Django modules") that form your application.
+
+All Django code is inside `$PROJECT.dj`, so that you place non-Django code in `$PROJECT.*`.
+
 ## Usage
 
 ```

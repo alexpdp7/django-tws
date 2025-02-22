@@ -4,7 +4,7 @@ This project is in alpha state and is not ready for general use.
 
 The objective of this project is to improve some rough edges that newcomers to Django can face.
 
-In the meantime, if you do not want with an alpha project, perhaps [Cookiecutter Django](https://cookiecutter-django.readthedocs.io/en/latest/) can work for you.
+In the meantime, if you do not want to deal with an alpha project, perhaps [Cookiecutter Django](https://cookiecutter-django.readthedocs.io/en/latest/) can work for you.
 
 ## Objectives
 

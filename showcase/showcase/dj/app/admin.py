@@ -15,4 +15,5 @@ class UserRestrictedModelAdmin(admin.ModelAdmin):
 
     # TODO: has_change_permission
 
+
 admin.site.register(models.UserRestrictedModel, UserRestrictedModelAdmin)

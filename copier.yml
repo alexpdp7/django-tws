@@ -1,0 +1,3 @@
+project:
+  type: str
+  help: short, recommended similar to the repository name, letters, numbers and underscores (no periods)

@@ -11,6 +11,32 @@ Until this project is not alpha, you might want to look at:
 * [Cookiecutter Django](https://cookiecutter-django.readthedocs.io/en/latest/)
 * [nanodjango](https://github.com/radiac/nanodjango)
 
+## Usage
+
+### Create a new Django project
+
+[Install uv](https://docs.astral.sh/uv/getting-started/installation/).
+
+[Install Copier as a CLI app](https://copier.readthedocs.io/en/stable/#installation).
+
+Run:
+
+```
+copier copy gh:alexpdp7/django-tws -r project-template destination
+```
+
+`copier` creates a `destination` directory.
+Change to the `destination` directory and run `uv run devserver.py` to start your application.
+
+### Showcase
+
+```
+cd showcase
+uv run devserver.py
+```
+
+Browse to http://localhost:8000/admin/ and log in as `admin`/`admin`.
+
 ## Objectives
 
 ### Provide an improved Django starter template with [uv](https://docs.astral.sh/uv/)
@@ -75,12 +101,3 @@ Django training wheels is designed to simplify adding these features to projects
 For example, Django training wheels uses [django-environ](https://github.com/joke2k/django-environ) for configuration, so deployments can use the `$DATABASE_URL` variable in production to connect to the database.
 
 Refer to [alternatives](#alternatives) for other projects that might include these features.
-
-## Usage
-
-```
-cd showcase
-uv run devserver.py
-```
-
-Browse to http://localhost:8000/admin/ and log in as `admin`/`admin`.

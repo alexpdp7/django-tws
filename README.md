@@ -4,6 +4,8 @@ This project is in alpha state and is not ready for general use.
 
 The objective of this project is to improve some rough edges that newcomers to Django can face.
 
+Additionally, this project includes a Django showcase project that demonstrates how to address common requirements with Django.
+
 ## Alternatives
 
 Until this project is not alpha, you might want to look at:

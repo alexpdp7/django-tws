@@ -1,0 +1,21 @@
+# {{ project }}
+
+## Running the project
+
+```
+uv run devserver.py
+```
+
+## Creating a new application
+
+```
+uv run copier copy gh:alexpdp7/django-tws -r app-template {{ project }}/dj/new_app_name
+```
+
+Add `{{ project }}.dj.new_app_name` to `{{ project }}/dj/settings.py`, `INSTALLED_APPS`.
+
+Edit:
+
+* `{{ project }}/dj/new_app_name/models.py` to add new models
+* `{{ project }}/dj/new_app_name/devserver_data.py` to add new initial data
+* `{{ project }}/dj/new_app_name/admin.py` to add models to the admin

@@ -103,3 +103,39 @@ Django training wheels is designed to simplify adding these features to projects
 For example, Django training wheels uses [django-environ](https://github.com/joke2k/django-environ) for configuration, so deployments can use the `$DATABASE_URL` variable in production to connect to the database.
 
 Refer to [alternatives](#alternatives) for other projects that might include these features.
+
+## Probably asked questions
+
+### Are projects created with Django training wheels ready to be deployed and exposed to the Internet?
+
+This is part of the [non-objectives](#non-objectives).
+I prefer that you become familiar with the [Django deployment documentation](https://docs.djangoproject.com/en/5.1/howto/deployment/), your chosen deployment method, the [Django deployment checklist](https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/), and any other production readiness checks.
+Refer to [alternatives](#alternatives) for other projects that might contain more support for production use.
+
+Although Django training wheels does not provide support for production use, adding production support to projects should not require heavy modification of Django training wheels-produced code.
+
+### How do you support users of Django training wheels?
+
+I do not even use Django training wheels *yet*.
+My previous Django projects follow similar patterns, and the next Django projects I create will use Django training wheels.
+Feel free to open issues, although I guarantee no support.
+
+Note that you can remove most Django training wheels from a project.
+(Although the project/app structure are unfriendly to use of the standard templates in `manage.py` `startapp`.)
+
+### Does Django training wheels support databases other than SQLite?
+
+Not yet.
+
+You can use the `DATABASE_URL` variable to deploy applications connecting to other databases supported by Django.
+
+However, the Django training wheels development workflow currently only supports SQLite.
+
+You can create Django projects that can run in multiple databases, and this can be very convenient.
+
+I would like to add support for PostgreSQL development by using projects such as:
+
+* [ZONKY Embedded Postgres Binaries](https://github.com/zonkyio/embedded-postgres-binaries)
+* [PostgreSQL Binaries](https://github.com/theseus-rs/postgresql-binaries)
+
+With these projects, you can run specific versions of PostgreSQL without installing software nor having root privileges.

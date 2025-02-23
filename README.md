@@ -15,6 +15,10 @@ Until this project is not alpha, you might want to look at:
 
 ### Experiment with the showcase project
 
+[Install uv](https://docs.astral.sh/uv/getting-started/installation/).
+
+Clone this repository, change into the repository directory, and then:
+
 ```
 cd showcase
 uv run devserver.py

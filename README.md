@@ -37,7 +37,7 @@ uv run copier copy gh:alexpdp7/django-tws -r project-template destination
 ```
 
 `copier` creates a `destination` directory.
-Change to the `destination` directory and run `uv run devserver.py` to start your application.
+Change to the `destination` directory and read the `README.md` file for further instructions.
 
 ## Objectives
 

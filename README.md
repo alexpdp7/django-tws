@@ -13,6 +13,15 @@ Until this project is not alpha, you might want to look at:
 
 ## Usage
 
+### Experiment with the showcase project
+
+```
+cd showcase
+uv run devserver.py
+```
+
+Browse to http://localhost:8000/admin/ and log in as `admin`/`admin`.
+
 ### Create a new Django project
 
 [Install uv](https://docs.astral.sh/uv/getting-started/installation/).
@@ -25,15 +34,6 @@ uv run copier copy gh:alexpdp7/django-tws -r project-template destination
 
 `copier` creates a `destination` directory.
 Change to the `destination` directory and run `uv run devserver.py` to start your application.
-
-### Showcase
-
-```
-cd showcase
-uv run devserver.py
-```
-
-Browse to http://localhost:8000/admin/ and log in as `admin`/`admin`.
 
 ## Objectives
 

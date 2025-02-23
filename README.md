@@ -1,4 +1,4 @@
-# Django Training Wheels
+# Django training wheels
 
 This project is in alpha state and is not ready for general use.
 

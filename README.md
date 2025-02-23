@@ -4,7 +4,12 @@ This project is in alpha state and is not ready for general use.
 
 The objective of this project is to improve some rough edges that newcomers to Django can face.
 
-In the meantime, if you do not want to deal with an alpha project, perhaps [Cookiecutter Django](https://cookiecutter-django.readthedocs.io/en/latest/) can work for you.
+## Alternatives
+
+Until this project is not alpha, you might want to look at:
+
+* [Cookiecutter Django](https://cookiecutter-django.readthedocs.io/en/latest/)
+* [nanodjango](https://github.com/radiac/nanodjango)
 
 ## Objectives
 
@@ -56,7 +61,7 @@ All Django code is inside `$PROJECT.dj`, so that you place non-Django code in `$
 ## Non-objectives
 
 Django training wheels does not intend to be a complete full solution, because I think a complete project can be overwhelming to Django newcomers.
-As developers become more acquainted with Django, they can evolve their projects with more functionality, or adopt more complete solutions such as [Cookiecutter Django](https://cookiecutter-django.readthedocs.io/en/latest/) (which support some features below).
+As developers become more acquainted with Django, they can evolve their projects with more functionality.
 
 The following features are explicitly not in scope:
 
@@ -68,6 +73,8 @@ The following features are explicitly not in scope:
 
 Django training wheels is designed to simplify adding these features to projects, but to not pay the complexity overhead until they are necessary.
 For example, Django training wheels uses [django-environ](https://github.com/joke2k/django-environ) for configuration, so deployments can use the `$DATABASE_URL` variable in production to connect to the database.
+
+Refer to [alternatives](#alternatives) for other projects that might include these features.
 
 ## Usage
 

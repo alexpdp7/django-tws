@@ -17,12 +17,10 @@ Until this project is not alpha, you might want to look at:
 
 [Install uv](https://docs.astral.sh/uv/getting-started/installation/).
 
-[Install Copier as a CLI app](https://copier.readthedocs.io/en/stable/#installation).
-
 Run:
 
 ```
-copier copy gh:alexpdp7/django-tws -r project-template destination
+uv run copier copy gh:alexpdp7/django-tws -r project-template destination
 ```
 
 `copier` creates a `destination` directory.

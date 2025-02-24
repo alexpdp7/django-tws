@@ -43,3 +43,20 @@ If you make changes to models, then run `devserver.py` to apply them immediately
 (You can also make changes to the admin to be able to validate that your model changes look good.)
 
 Once you are satisfied with your model changes, run `uv run python -m {{ project }}.dj.manage makemigrations` to create a migration and "solidify" the changes.
+
+## Pushing your code to a new Git repository
+
+* Run `git init` from the project root to initialize the project directory as an empty Git repository.
+* Run `git add .` to add the current contents of the project to the first commit.
+* Run `git status` to review the files that the commit will contain.
+* Run `git commit` to commit the changes.
+
+Once you have a local Git repository with an initial version of your code, you can push it to a Git forge such as GitHub.
+Review the Git forge instructions to learn how to do this.
+
+### Pushing to GitHub
+
+* Click the plus (+) sign in the top right corner of every GitHub page, then click "New repository".
+* In the form, leave the "Add a README file" checkbox unchecked, and the "Add .gitignore" and "Choose a license" dropdowns as "None".
+* Fill the rest of the form, then click "Create repository".
+* Follow the steps under "...or push an existing repository from the command line" to push the initial version of your code to GitHub.

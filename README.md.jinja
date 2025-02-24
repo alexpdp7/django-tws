@@ -23,3 +23,11 @@ Edit:
 * `{{ project }}/dj/new_app_name/models.py` to add new models
 * `{{ project }}/dj/new_app_name/devserver_data.py` to add new initial data
 * `{{ project }}/dj/new_app_name/admin.py` to add models to the admin
+
+## Running `manage.py`
+
+```
+uv run python -m {{ project }}.dj.manage ...
+```
+
+Use the `copier` command above to create new applications instead of using `manage.py startapp`.

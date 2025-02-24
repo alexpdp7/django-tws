@@ -1,3 +1,6 @@
 project:
   type: str
-  help: short, recommended similar to the repository name, letters, numbers and underscores (no periods)
+  help: |
+    Project name.
+    A short Python identifier (letters, numbers, underscores, no periods).
+    Probably very similar to the repository name.

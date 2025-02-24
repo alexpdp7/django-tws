@@ -24,6 +24,10 @@ Edit:
 * `{{ project }}/dj/new_app_name/devserver_data.py` to add new initial data
 * `{{ project }}/dj/new_app_name/admin.py` to add models to the admin
 
+`devserver.py` recreates the database each time it runs, and loads the data in `devserver_data.py`.
+`devserver_data.py` contains some commented-out code to create users.
+Use this code in your first app to always have at least a valid user for development testing.
+
 ## Running `manage.py`
 
 ```

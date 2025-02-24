@@ -60,3 +60,21 @@ Review the Git forge instructions to learn how to do this.
 * In the form, leave the "Add a README file" checkbox unchecked, and the "Add .gitignore" and "Choose a license" dropdowns as "None".
 * Fill the rest of the form, then click "Create repository".
 * Follow the steps under "...or push an existing repository from the command line" to push the initial version of your code to GitHub.
+
+## Handling Django version updates and other dependencies
+
+The `pyproject.toml` file contains the following line:
+
+```
+    "django~=5.1.6",
+```
+
+This means that the project will start with any 5.1.x version of Django, starting from 5.1.6.
+
+Django training wheels targets Django 5.1.x, but later versions of Django might require updates to the generated code.
+Django training wheels helps you kickstart Django projects, but does not tackle the problem of keeping a project updated with more recent Django versions.
+
+You should update your project to be on supported versions of Django, especially if you expose your project to the Internet.
+Review ["managing dependencies" in the uv documentation](https://docs.astral.sh/uv/guides/projects/#managing-dependencies) to learn how to update dependencies.
+
+Automated dependency update tools exist, such as [Dependabot](https://docs.github.com/en/code-security/dependabot) or [Mend Renovate](https://www.mend.io/renovate/).

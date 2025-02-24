@@ -35,3 +35,11 @@ uv run python -m {{ project }}.dj.manage ...
 ```
 
 Use the `copier` command above to create new applications instead of using `manage.py startapp`.
+
+## Handling model changes
+
+If you are experimenting with models, then every time you run `devserver.py`, `devserver.py` deploys the latest changes to your models without having to create a migration.
+If you make changes to models, then run `devserver.py` to apply them immediately.
+(You can also make changes to the admin to be able to validate that your model changes look good.)
+
+Once you are satisfied with your model changes, run `uv run python -m {{ project }}.dj.manage makemigrations` to create a migration and "solidify" the changes.

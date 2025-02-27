@@ -35,7 +35,7 @@ Browse to http://localhost:8000/admin/ and log in as `admin`/`admin`.
 Run:
 
 ```
-uv run copier copy gh:alexpdp7/django-tws -r project-template destination
+uvx copier copy gh:alexpdp7/django-tws -r project-template destination
 ```
 
 `copier` creates a `destination` directory.

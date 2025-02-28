@@ -18,6 +18,7 @@ Until this project is not alpha, you might want to look at:
 ### Experiment with the showcase project
 
 [Install uv](https://docs.astral.sh/uv/getting-started/installation/).
+Note that uv prints out some instructions you need to follow before you can use it.
 
 Clone this repository, change into the repository directory, and then:
 

@@ -12,17 +12,24 @@ uv run devserver.py
 
 ## Creating a new application
 
+Choose an application name.
+A Django application is a Python package, and should follow [Python package and module](https://peps.python.org/pep-0008/#package-and-module-names) name conventions.
+Prefer short, all-lowercase names.
+(If needed, separate words with underscores.)
+
+Replace `$APP` in the following command with the Django application name.
+
 ```
-uvx copier copy gh:alexpdp7/django-tws -r app-template {{ project }}/dj/new_app_name
+uvx copier copy gh:alexpdp7/django-tws -r app-template {{ project }}/dj/$APP
 ```
 
-Add `{{ project }}.dj.new_app_name` to `{{ project }}/dj/settings.py`, `INSTALLED_APPS`.
+Add `{{ project }}.dj.$APP` to `{{ project }}/dj/settings.py`, `INSTALLED_APPS`.
 
 Edit:
 
-* `{{ project }}/dj/new_app_name/models.py` to add new models
-* `{{ project }}/dj/new_app_name/devserver_data.py` to add new initial data
-* `{{ project }}/dj/new_app_name/admin.py` to add models to the admin
+* `{{ project }}/dj/$APP/models.py` to add new models
+* `{{ project }}/dj/$APP/devserver_data.py` to add new initial data
+* `{{ project }}/dj/$APP/admin.py` to add models to the admin
 
 `devserver.py` recreates the database each time it runs, and loads the data in `devserver_data.py`.
 `devserver_data.py` contains some commented-out code to create users.

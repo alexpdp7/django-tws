@@ -1,6 +1,6 @@
 project:
   type: str
   help: |
-    Project name.
-    A short Python identifier (letters, numbers, underscores, no periods).
-    Probably very similar to the repository name.
+    Enter your project name below.
+    Review the Django training wheels documentation to learn how to choose the project name.
+

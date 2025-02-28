@@ -44,6 +44,7 @@ Review the [Django documentation on projects and applications](https://docs.djan
 In most cases, a Django project is a website.
 A Django project is a Python package, and should follow [Python package and module](https://peps.python.org/pep-0008/#package-and-module-names) name conventions.
 Prefer short, all-lowercase names.
+(If needed, separate words with underscores.)
 
 Note that if your Django project is named `foo`, then you cannot use dependencies that have the `foo` name.
 Try to pick a unique name, perhaps including in the name the name of the organization that owns the Django project.

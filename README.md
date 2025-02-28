@@ -63,14 +63,6 @@ However, the Django documentation does not explain a pleasant development workfl
 Django training wheels provides a `devserver` layer on top of `runserver`
 `devserver` recreates the database from scratch, seeds development data, and starts `runserver` with the latest model definitions.
 
-### Showcase typical Django patterns
-
-Django training wheels includes a showcase project.
-The showcase project includes:
-
-* A model admin that uses `raw_id_fields` to replace a dropdown to select a value from a related table with a search functionality.
-* A model admin that filters the database rows depending on the logged-in user.
-
 ### Provide an opinionated project structure
 
 Although Django provides the `startproject` and `startapp` commands, they only guide you slighty towards a simple project structure.

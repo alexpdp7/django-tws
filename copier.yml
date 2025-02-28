@@ -1,16 +1,18 @@
 project:
   type: str
-  help: name of the project you are creating this application in
+  help: |
+    Enter the name of the Django project this application belongs to.
 app:
   type: str
   help: |
-    name of the new app, letters, digits and underscores (no periods).
+    Enter the name of the new app.
     Django apps are the modules of your project.
     If you are going to have more than a few models in your application, then use apps to separate between different functionalities.
+    Prefer a short, lowercase name.
+    (If needed, separate words with underscores.)
     If you will only have a few models, then you can pick a generic name such as "base", "app", etc.
 app_camel_case:
   type: str
   help: |
-    Same as the previous, but in camel case.
-    If your app was foo_bar, then app_camel_case should be FooBar.
-
+    Enter the app name, but in camel case.
+    If your app was foo_bar, then you would enter FooBar.

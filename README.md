@@ -29,6 +29,12 @@ uv run devserver.py
 
 Browse to http://localhost:8000/admin/ and log in as `admin`/`admin`.
 
+The showcase demonstrates:
+
+* [Demo data](showcase/showcase/dj/app/devserver_data.py) to create different users, groups, and permissions.
+* The "user restricted models" admin shows different items to different users.
+* The "user restricted models" uses `raw_id_fields` for the user foreign key.
+
 ### Create a new Django project
 
 [Install uv](https://docs.astral.sh/uv/getting-started/installation/).

@@ -2,6 +2,7 @@ project:
   type: str
   help: |
     Enter the name of the Django project this application belongs to.
+    If you executed "uvx copier copy gh:alexpdp7/django-tws -r app-template foo/dj/bar", then the project name is foo.
 app:
   type: str
   help: |
@@ -11,8 +12,10 @@ app:
     Prefer a short, lowercase name.
     (If needed, separate words with underscores.)
     If you will only have a few models, then you can pick a generic name such as "base", "app", etc.
+    If you executed "uvx copier copy gh:alexpdp7/django-tws -r app-template foo/dj/bar", then the app name is bar.
 app_camel_case:
   type: str
   help: |
     Enter the app name, but in camel case.
-    If your app was foo_bar, then you would enter FooBar.
+    If your app was foo_bar, then you would enter FooBar
+    If you executed "uvx copier copy gh:alexpdp7/django-tws -r app-template foo/dj/bar", then the app camel case name is Bar.

@@ -39,14 +39,26 @@ The showcase demonstrates:
 
 [Install uv](https://docs.astral.sh/uv/getting-started/installation/).
 
-Run:
+Review the [Django documentation on projects and applications](https://docs.djangoproject.com/en/5.1/ref/applications/#projects-and-applications) and the [Python documentation on packages and modules](https://docs.python.org/3/reference/import.html#packages).
+
+In most cases, a Django project is a website.
+A Django project is a Python package, and should follow [Python package and module](https://peps.python.org/pep-0008/#package-and-module-names) name conventions.
+Prefer short, all-lowercase names.
+
+Note that if your Django project is named `foo`, then you cannot use dependencies that have the `foo` name.
+Try to pick a unique name, perhaps including in the name the name of the organization that owns the Django project.
+
+In many cases, if you store your Django project in a version control repository, then the name of the repository matches the Django project name.
+
+Django training wheels uses [Copier](https://copier.readthedocs.io/en/stable/) to provide a template for Django projects.
+The Copier command below creates a new directory with a full Django project, ready to use.
+In most cases, replace `$DESTINATION` in the following command with the Django project name.
 
 ```
-uvx copier copy gh:alexpdp7/django-tws -r project-template destination
+uvx copier copy gh:alexpdp7/django-tws -r project-template $DESTINATION
 ```
 
-`copier` creates a `destination` directory.
-Change to the `destination` directory and read the `README.md` file for further instructions.
+Change to the new directory and read the `README.md` file for further instructions.
 
 ## Objectives
 

@@ -22,7 +22,11 @@ def run(module):
         "--no-reset-database", action="store_false", dest="reset_database"
     )
     parser.add_argument("--keep-database", action="store_true", dest="keep_database")
-    args = parser.parse_args()
+    args, remainder = parser.parse_known_args()
+
+    assert remainder == [] or remainder[0] == "--"
+    if len(remainder) > 0 and remainder[0] == "--":
+        remainder = remainder[1:]
 
     with with_reset_database(
         module,
@@ -32,7 +36,7 @@ def run(module):
         keep_database=args.keep_database,
     ):
         subprocess.run(
-            [sys.executable, "-m", f"{module}.manage", args.command],
+            [sys.executable, "-m", f"{module}.manage", args.command] + remainder,
             check=True,
             env=env,
         )
